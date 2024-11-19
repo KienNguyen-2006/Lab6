@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #00005D; 
+    color: #000066;
+}
+#wrapper {
+    width: 80%; 
+    margin: auto; 
+    background-color: #b3c7e6; 
+    padding: 20px;
+    border: 1px solid #869dc7; 
+}
+
+header {
+    background-color: #869dc7;
+    color: #00005D;
+    font-size: 150%;
+    padding: 10px 10px 10px 155px;
+    background-image: url(../images/lighthouselogo.jpg);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 120%;
+    margin: 0 0 20px 0; 
+    font-weight: bold;
+}
+
+nav {
+    float: left; 
+    width: 200px; 
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    background-color: pink;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    text-align: center;
+    padding: 0;
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: pink;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #f394a3;
+}
+
+
+main {
+    margin-left: 220px; 
+    padding: 200px 50px;
+    background-color: #ffffff; 
+    border: 1px solid #869dc7;  
+}
+
+main img {
+    float: right;
+    margin: 10px;
+    width: 250px;
+    height: 355px;
+    border: 1px solid #ccc; 
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #869dc7;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.83em 0; 
+    font-weight: bold;
+}
+
+p {
+    font-size: 90%;
+    color: black;
+    margin: 1em 0; /* Adds vertical spacing */
+}
+
+/* Footer Styles */
+footer {
+    font-size: 14px;
+    background-color: #869dc7;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 7px solid #1d2b3b; /* Adds a decorative bottom border */
+    color: #00005D;
+    clear: both; /* Ensures footer stays below floated elements */
+}
+
+
+@media (max-width: 500px) {
+    #wrapper {
+        font-size: 1.5em;
+    }
+
+    nav {
+        width: 100%; 
+        float: none;
+        background-color: #b3c7e6;
+    }
+
+    nav a {
+        text-align: left;
+        padding: 10px;
+        background-color: pink;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    main img {
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    nav a {
+        display: inline-block;
+        width: auto;
+        text-align: center;
+        margin: 0 0.5em;
+    }
+}
